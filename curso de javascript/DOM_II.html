@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_II</title>
+</head>
+<body>
+    <ol id = "lista">
+        <li id = "primero"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li> "Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+    </ol>
+    <script>
+                //var primerElemento = document.getElementById("primero");
+                //primerElemento.innerHTML = "Nuevo Texto";
+                  //primerElemento.textContent = "Nuevo Texto";
+
+
+
+        var elemento = document.createElement("li"),
+            contenido =document.createTextNode( "Nuevo texto");
+            
+            
+            elemento.appendChild(contenido);
+    
+            var padre = document.getElementsByTagName("li")[0].parentNode;
+            ref = document.getElementsByTagName("li")[0]
+           padre.removeChild(ref);
+           
+            //var primerElemento = document.getElementsByTagName("li")[0];
+            //padre.insertBefore(elemento, primerElemento );
+
+    </script>
+</body>
+</html>

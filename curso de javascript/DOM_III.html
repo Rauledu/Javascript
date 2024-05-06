@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atributos DOM</title>
+    <style>
+   
+        .thumb{
+            width: 200px;
+            transition: 300ms all ease;
+
+        }
+
+        .grande{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="button" value="Cambio de tamano" onclick="zoom();">
+    </form>
+    <img id = "thumb" class="thumb" src="https://fastly.picsum.photos/id/206/200/200.jpg?hmac=4sOfaJaxYl_SjIfzFMVrIqIi3bdvwGke2r0MBg7Q1i8" width="400" alt="" >
+
+    </section>
+    <script>
+            var zoom = function(){
+                var thumb = document.getElementById("thumb");     
+                //thumb.className =  "thumb grande";
+
+                if(thumb.className == "thumb"){
+                    thumb.className = "thumb grande";
+                }else{
+                    thumb.className = "thumb";
+                }
+
+            }           
+    </script>
+</body>
+</html>
